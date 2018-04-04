@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.senaijandira.fintechs.CadastroReceitaActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nova Receita"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição"
+        android:textSize="14sp"
+        android:paddingTop="20dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_descricao"
+        android:inputType="text"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Valor"
+            android:textSize="14sp"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textSize="14sp"
+            android:paddingTop="20dp"
+            android:layout_marginLeft="140dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_valor"
+                android:layout_marginLeft="5dp"
+                android:inputType="numberDecimal"
+                />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_data"
+                android:layout_marginLeft="40dp"
+                android:inputType="date"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conta"
+                android:textSize="14sp"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Categoria"
+                android:textSize="14sp"
+                android:paddingTop="20dp"
+                android:layout_marginLeft="140dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <Spinner
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_conta_receita"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <Spinner
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_categoria_receita"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="salvar"
+        android:onClick="salvar"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>
